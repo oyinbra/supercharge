@@ -2,7 +2,7 @@ autoload -Uz plug
 
 # completions
 autoload -Uz compinit
-zstyle ':completion:*' menu yes select
+zstyle ':completion:*' menu no select
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 _comp_options+=(globdots)		# Include hidden files.
